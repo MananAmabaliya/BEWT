@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt("Enter the number"))
+        n1=n
+        n2=n
+        sum=0
+        count=0
+
+        while(n2!=0){
+            n2=parseInt(n2/10)
+            count++;
+        }
+        
+        while(n1!=0){
+            p=n1%10
+            power=1
+            for(let i=1;i<=count;i++){
+                power=power*p
+            }
+            sum=sum+power
+             n1=parseInt(n1/10)
+        }
+       
+        if(sum==n){
+            document.write("armstrong")
+        }
+        else{
+            document.write(" not armstrong")
+        }
+
+    </script>
+</body>
+</html>

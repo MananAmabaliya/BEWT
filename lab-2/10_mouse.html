@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P3</title>
+</head>
+<body>
+    <input type="txet" id="inputTxt">
+    
+    <script>
+        inputTxt.addEventListener("keydown",(e)=>{
+            console.log("keydown : " + e.key);
+        });
+        inputTxt.addEventListener("keypress",(e)=>{
+            console.log("keypress : " + e.key);
+        });
+        inputTxt.addEventListener("keyup",(e)=>{
+            console.log("keyup : " + e.key);
+        });
+
+        inputTxt.style.width = "300px";
+        inputTxt.style.height = "50px";
+        inputTxt.style.fontSize = "50px";
+
+    </script>
+</body>
+</html>

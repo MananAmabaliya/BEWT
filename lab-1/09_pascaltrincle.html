@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    let n = 6;
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n - 1 - i; j++) {
+            document.write("&nbsp;");
+        }
+        let c=1
+        for (let k = 0; k <= i; k++) {
+             document.write(parseInt(c) + "&nbsp;&nbsp;");
+           c = c * ( (i-k) / (k+1) )
+
+           
+        }
+        document.write("<br>");
+    }
+</script>
+
+</body>
+</html>
